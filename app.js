@@ -2,19 +2,19 @@
 const qrTarget = "https://linktr.ee/OmlEurope";
 
 const socials = [
-  { icon:"fa-brands fa-whatsapp",  label:"WhatsApp",  url:"https://wa.me/31623518022" },
-  { icon:"fa-solid fa-location-dot", label:"Google Maps", url:" Van Vredenburgweg 4, 2282SG y Rijswijk – PAISES BAJOS" },
-  { icon:"fa-solid fa-globe",    label:"Web",    url:"https://lcreurope.com"  },
+  { icon:"fa-brands fa-whatsapp",  label:"WhatsApp",  url:"https://wa.me/+51964347840" },
+  { icon:"fa-solid fa-location-dot", label:"Google Maps", url:"https://maps.app.goo.gl/7np38iBNKtcfZQHv8" },
+  { icon:"fa-solid fa-globe",    label:"Web",    url:"https://omlagroinversionesperu.weebly.com/"  },
   { icon:"fa-brands fa-linkedin-in", label:"LinkedIn",  url:"https://www.linkedin.com/company/omleurope"  },
 ];
 
 const linksData = [
   {
-    title: "Boy Stuijfzand | VENTAS",    url: "https://wa.me/31623518022",icon: "fa-solid fa-user"},
-  {title: "WhatsApp Ventas", url: "https://wa.me/31623518022",icon: "fa-brands fa-whatsapp"},
-  {title: "omleurope.com", url: "https://omleurope.com/",icon: "fa-solid fa-globe"},
-  {title: "Google Maps",url: "https://www.google.com/maps/search/?api=1&query=Van%20Vredenburgweg%204%2C%202282SG%20Rijswijk%2C%20Pa%C3%ADses%20Bajos",icon: "fa-solid fa-location-dot"},
-  {title: "Correo Electrónico", url: "mailto:sales@omleurope.com?subject=Consulta%20de%20ventas",icon: "fa-solid fa-envelope"},
+    title: "Edom Loayza | GERENTE",    url: "https://wa.me/+51964347840",icon: "fa-solid fa-user"},
+  {title: "WhatsApp Ventas", url: "https://wa.me/+51964347840",icon: "fa-brands fa-whatsapp"},
+  {title: "omlagroinversionesperu.com", url: "https://omlagroinversionesperu.weebly.com/",icon: "fa-solid fa-globe"},
+  {title: "Google Maps",url: "https://maps.app.goo.gl/7np38iBNKtcfZQHv8",icon: "fa-solid fa-location-dot"},
+  {title: "Correo Electrónico", url: "mailto:edom@omlperu.com?subject=Consulta%20de%20ventas",icon: "fa-solid fa-envelope"},
 ];
 
 const shopItems = [
