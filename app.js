@@ -9,12 +9,18 @@ const socials = [
 ];
 
 const linksData = [
+  { title: "Yoel Loayza", url: "https://wa.me/+51913302520", icon: "fa-solid fa-user" },
+
   {
-    title: "Yoel Loayza",    url: "https://wa.me/+51913302520",icon: "fa-solid fa-user"},
-  {title: "WhatsApp Ventas", url: "https://wa.me/+51913302520",icon: "fa-brands fa-whatsapp"},
-  {title: "omlagroinversionesperu.com", url: "https://omlagroinversionesperu.weebly.com/",icon: "fa-solid fa-globe"},
-  {title: "Google Maps",url: "https://maps.app.goo.gl/7np38iBNKtcfZQHv8",icon: "fa-solid fa-location-dot"},
-  {title: "Correo Electrónico", url: "mailto:administracion@omlperu.com?subject=Consulta%20de%20ventas",icon: "fa-solid fa-envelope"},
+    title: "WhatsApp Ventas",
+    url: "https://wa.me/+51913302520",
+    icon: "fa-brands fa-whatsapp",
+    sub: "+51 913 302 520"
+  },
+
+  { title: "omlagroinversionesperu.com", url: "https://omlagroinversionesperu.weebly.com/", icon: "fa-solid fa-globe" },
+  { title: "Google Maps", url: "https://maps.app.goo.gl/7np38iBNKtcfZQHv8", icon: "fa-solid fa-location-dot" },
+  { title: "Correo Electrónico", url: "mailto:administracion@omlperu.com?subject=Consulta%20de%20ventas", icon: "fa-solid fa-envelope" },
 ];
 
 const shopItems = [
@@ -22,13 +28,13 @@ const shopItems = [
   { title:"Producto - Curcuma",   price:"", img:"https://mercafreshperu.com/wp-content/uploads/2024/02/Curcuma.webp", url:"https://omleurope.com/nuestros-productos/"},
   { title:"Producto - Esparrago", price:"", img:"https://www.herbazest.com/imgs/4/6/6/453075/esparragos.jpg", url:"https://omleurope.com/nuestros-productos/"},
   { title:"Producto - Arandano",  price:"", img:"https://www.organiclife.ec/wp-content/uploads/2022/05/organic-blueberry-f.jpeg", url:"https://omleurope.com/nuestros-productos/"},
-  { title:"Producto - Aguacate",     price:"", img:"https://www.haifa-group.com/sites/default/files/crop/avocado%20cut%20isolated%2044503222_xxl.jpg", url:"https://omleurope.com/nuestros-productos/"},
-  { title:"Producto - Ajo",    price:"", img:"https://okdiario.com/img/recetas/2017/07/17/ajos-2.jpg", url:"https://omleurope.com/nuestros-productos/"},
-  { title:"Producto - Mangos",     price:"", img:"https://www.camposol.com/wp-content/uploads/2019/01/mangos.jpg", url:"https://omleurope.com/nuestros-productos/"},
-  { title:"Producto - Granadas",     price:"", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjbompPeCfdBpdeW6Ni7zk33wEiXDz5-I0zQ&s", url:"https://omleurope.com/nuestros-productos/"},
-  { title:"Producto - Mandarinas",     price:"", img:"https://www.joyafruits.com/sistema/data/source/producto/MANDARINA.png", url:"https://omleurope.com/nuestros-productos/"},
-  { title:"Producto - Uvas",     price:"", img:"https://fundaciondelcorazon.com/images/stories/corazon-facil/impulso-vital/uvas.jpg", url:"https://omleurope.com/nuestros-productos/"},
-  { title:"Producto - Cebollas",     price:"", img:"https://www.fructusterrum.com/wp-content/uploads/2020/07/cebolla-roja-1.jpg", url:"https://omleurope.com/nuestros-productos/"},
+  { title:"Producto - Aguacate",  price:"", img:"https://www.haifa-group.com/sites/default/files/crop/avocado%20cut%20isolated%2044503222_xxl.jpg", url:"https://omleurope.com/nuestros-productos/"},
+  { title:"Producto - Ajo",       price:"", img:"https://okdiario.com/img/recetas/2017/07/17/ajos-2.jpg", url:"https://omleurope.com/nuestros-productos/"},
+  { title:"Producto - Mangos",    price:"", img:"https://www.camposol.com/wp-content/uploads/2019/01/mangos.jpg", url:"https://omleurope.com/nuestros-productos/"},
+  { title:"Producto - Granadas",  price:"", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjbompPeCfdBpdeW6Ni7zk33wEiXDz5-I0zQ&s", url:"https://omleurope.com/nuestros-productos/"},
+  { title:"Producto - Mandarinas",price:"", img:"https://www.joyafruits.com/sistema/data/source/producto/MANDARINA.png", url:"https://omleurope.com/nuestros-productos/"},
+  { title:"Producto - Uvas",      price:"", img:"https://fundaciondelcorazon.com/images/stories/corazon-facil/impulso-vital/uvas.jpg", url:"https://omleurope.com/nuestros-productos/"},
+  { title:"Producto - Cebollas",  price:"", img:"https://www.fructusterrum.com/wp-content/uploads/2020/07/cebolla-roja-1.jpg", url:"https://omleurope.com/nuestros-productos/"},
 ];
 
 // ===== Render redes =====
@@ -48,7 +54,12 @@ linksData.forEach(item=>{
   el.className="item";
   el.innerHTML=`
     <span class="logo"><i class="${item.icon}" aria-hidden="true"></i></span>
-    <div class="txt"><div class="title">${item.title}</div></div>
+
+    <div class="txt">
+      <div class="title">${item.title}</div>
+      ${item.sub ? `<div class="sub">${item.sub}</div>` : ""}
+    </div>
+
     <div class="dots" title="Opciones"><i class="fa-solid fa-ellipsis-vertical"></i></div>
     <a class="link" href="${item.url}" target="_blank" rel="noopener" aria-label="${item.title}"></a>
   `;
@@ -61,11 +72,20 @@ shopItems.forEach(p=>{
   const card=document.createElement('div');
   card.className='product-card';
   card.innerHTML=`
-    <img class="product-img" src="${p.img}" alt="${p.title}">
-    <div class="product-title">${p.title}</div>
-    ${p.price ? `<div class="product-price">${p.price}</div>` : ''}
-    <i class="fa-solid fa-ellipsis-vertical product-dots"></i>
-    <a class="product-link" href="${p.url}" target="_blank" rel="noopener" aria-label="${p.title}"></a>`;
+    <div class="product-top">
+      <img class="product-img" src="${p.img}" alt="${p.title}">
+    </div>
+
+    <div class="product-meta">
+      <div class="product-text">
+        <div class="product-title">${p.title}</div>
+        ${p.price ? `<div class="product-price">${p.price}</div>` : ''}
+      </div>
+      <i class="fa-solid fa-ellipsis-vertical product-dots" aria-hidden="true"></i>
+    </div>
+
+    <a class="product-link" href="${p.url}" target="_blank" rel="noopener" aria-label="${p.title}"></a>
+  `;
   grid.appendChild(card);
 });
 
