@@ -2,7 +2,7 @@
 const qrTarget = "https://linktr.ee/OmlEurope";
 
 const socials = [
-  { icon:"fa-brands fa-whatsapp",  label:"WhatsApp",  url:"https://wa.me/+51964347840" },
+  { icon:"fa-brands fa-whatsapp",  label:"WhatsApp",  url:"https://wa.me/+51913302520" },
   { icon:"fa-solid fa-location-dot", label:"Google Maps", url:"https://maps.app.goo.gl/7np38iBNKtcfZQHv8" },
   { icon:"fa-solid fa-globe",    label:"Web",    url:"https://omlagroinversionesperu.weebly.com/"  },
   { icon:"fa-brands fa-linkedin-in", label:"LinkedIn",  url:"https://www.linkedin.com/company/omleurope"  },
@@ -10,23 +10,23 @@ const socials = [
 
 const linksData = [
   {
-    title: "Edom Loayza | GERENTE",    url: "https://wa.me/+51964347840",icon: "fa-solid fa-user"},
-  {title: "WhatsApp Ventas", url: "https://wa.me/+51964347840",icon: "fa-brands fa-whatsapp"},
+    title: "Yoel Loayza",    url: "https://wa.me/+51913302520",icon: "fa-solid fa-user"},
+  {title: "WhatsApp Ventas", url: "https://wa.me/+51913302520",icon: "fa-brands fa-whatsapp"},
   {title: "omlagroinversionesperu.com", url: "https://omlagroinversionesperu.weebly.com/",icon: "fa-solid fa-globe"},
   {title: "Google Maps",url: "https://maps.app.goo.gl/7np38iBNKtcfZQHv8",icon: "fa-solid fa-location-dot"},
-  {title: "Correo Electrónico", url: "mailto:edom@omlperu.com?subject=Consulta%20de%20ventas",icon: "fa-solid fa-envelope"},
+  {title: "Correo Electrónico", url: "mailto:administracion@omlperu.com?subject=Consulta%20de%20ventas",icon: "fa-solid fa-envelope"},
 ];
 
 const shopItems = [
-  { title:"Producto - Jengibre",  price:"", img:"https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_image__small/public/media/0d/migrated/jengibre.jpg.webp", url:"https://omleurope.com/nuestros-productos/"},
-  { title:"Yarphone - Curcuma",   price:"", img:"https://villanatura.cr/cdn/shop/products/image_82bb6a0c-85b2-4bd4-aa71-35802fd016c2.jpg?v=1663287346&width=1946", url:"https://omleurope.com/nuestros-productos/"},
+  { title:"Producto - Jengibre",  price:"", img:"https://www.ortis.com/media/plant/zingiber-officinale-roscoe.png", url:"https://omleurope.com/nuestros-productos/"},
+  { title:"Producto - Curcuma",   price:"", img:"https://mercafreshperu.com/wp-content/uploads/2024/02/Curcuma.webp", url:"https://omleurope.com/nuestros-productos/"},
   { title:"Producto - Esparrago", price:"", img:"https://www.herbazest.com/imgs/4/6/6/453075/esparragos.jpg", url:"https://omleurope.com/nuestros-productos/"},
   { title:"Producto - Arandano",  price:"", img:"https://www.organiclife.ec/wp-content/uploads/2022/05/organic-blueberry-f.jpeg", url:"https://omleurope.com/nuestros-productos/"},
   { title:"Producto - Aguacate",     price:"", img:"https://www.haifa-group.com/sites/default/files/crop/avocado%20cut%20isolated%2044503222_xxl.jpg", url:"https://omleurope.com/nuestros-productos/"},
   { title:"Producto - Ajo",    price:"", img:"https://okdiario.com/img/recetas/2017/07/17/ajos-2.jpg", url:"https://omleurope.com/nuestros-productos/"},
   { title:"Producto - Mangos",     price:"", img:"https://www.camposol.com/wp-content/uploads/2019/01/mangos.jpg", url:"https://omleurope.com/nuestros-productos/"},
   { title:"Producto - Granadas",     price:"", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjbompPeCfdBpdeW6Ni7zk33wEiXDz5-I0zQ&s", url:"https://omleurope.com/nuestros-productos/"},
-  { title:"Producto - Mandarinas",     price:"", img:"https://mercampo.pe/wp-content/uploads/2021/12/AnyConv.com__mandarina-300x300-1.webp", url:"https://omleurope.com/nuestros-productos/"},
+  { title:"Producto - Mandarinas",     price:"", img:"https://www.joyafruits.com/sistema/data/source/producto/MANDARINA.png", url:"https://omleurope.com/nuestros-productos/"},
   { title:"Producto - Uvas",     price:"", img:"https://fundaciondelcorazon.com/images/stories/corazon-facil/impulso-vital/uvas.jpg", url:"https://omleurope.com/nuestros-productos/"},
   { title:"Producto - Cebollas",     price:"", img:"https://www.fructusterrum.com/wp-content/uploads/2020/07/cebolla-roja-1.jpg", url:"https://omleurope.com/nuestros-productos/"},
 ];
