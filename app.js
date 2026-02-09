@@ -1,4 +1,4 @@
-// ===== Config =====
+D// ===== Config =====
 const qrTarget = "https://linktr.ee/OmlAgroinversiones";
 
 const socials = [
@@ -9,18 +9,18 @@ const socials = [
 ];
 
 const linksData = [
-  { title: "Yoel Loayza", url: "https://wa.me/+51913302520", icon: "fa-solid fa-user" },
+  { title: "Edom Loayza", url: "https://wa.me/+51964347840", icon: "fa-solid fa-user" },
 
   {
     title: "WhatsApp Ventas",
-    url: "https://wa.me/+51913302520",
+    url: "https://wa.me/+51964347840",
     icon: "fa-brands fa-whatsapp",
-    sub: "+51 913 302 520",
+    sub: "+51 964 347 840",
   },
 
   { title: "omlagroinversionesperu.com", url: "https://omlagroinversionesperu.weebly.com/", icon: "fa-solid fa-globe" },
   { title: "Google Maps", url: "https://maps.app.goo.gl/7np38iBNKtcfZQHv8", icon: "fa-solid fa-location-dot" },
-  { title: "Correo Electrónico", url: "mailto:administracion@omlperu.com?subject=Consulta%20de%20ventas", icon: "fa-solid fa-envelope" },
+  { title: "Correo Electrónico", url: "mailto:edom@omlperu.com?subject=Consulta%20de%20ventas", icon: "fa-solid fa-envelope" },
 
   // ✅ TARJETA: UBICACIÓN (MAPA INTERACTIVO, SIN TEXTO, SIN BOTÓN)
   {
@@ -248,3 +248,4 @@ document.addEventListener("DOMContentLoaded", updateWhiteFloor);
     showBar(false);
   });
 })();
+
