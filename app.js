@@ -1,4 +1,4 @@
-D// ===== Config =====
+// ===== Config =====
 const qrTarget = "https://linktr.ee/OmlAgroinversiones";
 
 const socials = [
@@ -248,4 +248,3 @@ document.addEventListener("DOMContentLoaded", updateWhiteFloor);
     showBar(false);
   });
 })();
-
